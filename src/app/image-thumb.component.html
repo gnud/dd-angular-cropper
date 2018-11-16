@@ -1,0 +1,16 @@
+<div [ngClass]="thumbType">
+    <div class="mobile-preview">
+        <img class="mobile-thumbnail" src="{{ innerValue }}"
+             onerror="this.src='../assets/img/crop_placeholder.svg';" alt="image">
+    </div>
+    <div class="input-file-subs">
+        <span class="input-file-label">
+            <i class="material-icons md-18">add_a_photo</i>
+            <span>Update {{thumbType}}</span>
+        </span>
+        <input type="file" #fileinput accept="image/gif, image/jpeg, image/png">
+    </div>
+    <div class="file-path-wrapper">
+        <input class="file-path" type="hidden">
+    </div>
+</div>

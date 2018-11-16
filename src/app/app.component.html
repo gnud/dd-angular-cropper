@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<form>
+  <app-image-thumb></app-image-thumb>
+
+  <!-- TODO: mpve inside the image-thumb -->
+  <angular-cropper #cropper [cropperOptions]="config" [imageUrl]="'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/1599px-Hopetoun_falls.jpg'" (export)="export($event)"></angular-cropper>
+</form>
